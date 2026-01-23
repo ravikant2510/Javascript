@@ -35,4 +35,37 @@ console.log(typeof heros);
 
 
 
+// **********************Memory type******************************
+
+// Stack (Primitive) . Heap (Non-primitive)  Memory
+
+
+// stack --> Copy of Memory
+
+let myName = "RAVIKANT"
+let anotherName = myName
+anotherName = "Saurabh"
+
+console.log(myName);
+console.log(anotherName);
+
+// Heap ---> reference (not a copy)
+
+let userOne = {
+   email: "ravikant@gmail.com",
+   upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "ravikantpurbey@gmail.com"
+
+console.log(userOne.email);
+
+
+
+
+
+
+
 
