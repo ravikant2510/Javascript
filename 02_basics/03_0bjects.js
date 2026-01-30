@@ -9,7 +9,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "ABC",
     "full name": "ABC 123",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1",   //treated as Symbol & if we check the type then it is Undefined
     age: 18,
     location: "Jaipur",
     email: "abc@google.com",
@@ -21,6 +21,7 @@ const JsUser = {
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
+
 
 JsUser.email = "abc@chatgpt.com"
 // Object.freeze(JsUser)
